@@ -5,6 +5,7 @@ A binary text classifier that detects whether an SMS message is **spam** or **ha
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![Flask](https://img.shields.io/badge/Flask-3.1-green)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
+![Latest Release](https://img.shields.io/github/v/release/phantomsage219/sms-spam-detector?label=latest)
 
 ---
 
@@ -62,9 +63,12 @@ Open [http://127.0.0.1:5000](http://127.0.0.1:5000)
 ### Pull and run from Docker Hub
 
 ```bash
-docker pull phantomsage219/sms-spam-detector:v1.0.1
-docker run -p 5000:5000 phantomsage219/sms-spam-detector:v1.0.1
+# replace <version> with the tag you want — see available tags at the link below
+docker pull phantomsage219/sms-spam-detector:<version>
+docker run -p 5000:5000 phantomsage219/sms-spam-detector:<version>
 ```
+
+Check available tags on [Docker Hub](https://hub.docker.com/r/phantomsage219/sms-spam-detector/tags).
 
 Open [http://localhost:5000](http://localhost:5000)
 
@@ -103,11 +107,11 @@ sms-spam-detector/
 Pushing a version tag to GitHub automatically builds and pushes the Docker image to Docker Hub via GitHub Actions.
 
 ```bash
-git tag v1.0.0
-git push origin v1.0.0
+git tag v<version>
+git push origin v<version>
 ```
 
-Image will be published as `phantomsage219/sms-spam-detector:v1.0.0`.
+Image will be published as `phantomsage219/sms-spam-detector:v<version>`.
 
 ### Required GitHub secrets
 
