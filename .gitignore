@@ -1,0 +1,29 @@
+# python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# environments
+.venv/
+venv/
+env/
+.conda/
+
+# jupyter
+.ipynb_checkpoints/
+
+# data — too large for version control
+spam.csv
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# misc
+screenshots/
+*.log

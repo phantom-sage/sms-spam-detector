@@ -1,0 +1,34 @@
+# ── version control ───────────────────────────────────────────────────────────
+.git
+.gitignore
+
+# ── python cache ──────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.conda/
+
+# ── notebooks & training artifacts ───────────────────────────────────────────
+train.ipynb
+train.py
+spam.csv
+model/loss_curve.png
+
+# ── IDE & OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── misc ──────────────────────────────────────────────────────────────────────
+screenshots/
+README.md
+*.md
+*.log
