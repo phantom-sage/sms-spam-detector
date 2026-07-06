@@ -374,6 +374,11 @@
         hideInlineError();
       }
 
+      // warn if input has no letters at all
+      if (cleaned.length > 0 && !/[a-zA-Z]/.test(cleaned)) {
+        showInlineError('Message must contain at least one English word.');
+      }
+
       charCount.textContent = input.value.length;
     });
 
@@ -396,6 +401,11 @@
 
       if (/[^\x00-\x7F]/.test(message)) {
         showError('English text only — please remove any Arabic or non-English characters.');
+        return;
+      }
+
+      if (!/[a-zA-Z]/.test(message)) {
+        showError('Message must contain at least one English word — numbers and punctuation alone are not accepted.');
         return;
       }
 
