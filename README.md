@@ -62,8 +62,8 @@ Open [http://127.0.0.1:5000](http://127.0.0.1:5000)
 ### Pull and run from Docker Hub
 
 ```bash
-docker pull phantomsage219/sms-spam-detector:v1.0.0
-docker run -p 5000:5000 phantomsage219/sms-spam-detector:v1.0.0
+docker pull phantomsage219/sms-spam-detector:v1.0.1
+docker run -p 5000:5000 phantomsage219/sms-spam-detector:v1.0.1
 ```
 
 Open [http://localhost:5000](http://localhost:5000)
